@@ -1,0 +1,129 @@
+%% start of file `template_en.tex'.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage[francais]{babel}
+\usepackage[latin1]{inputenc}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % classic, casual
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% personal data
+\firstname{\Huge{Christophe}}
+\familyname{\Huge{HAEN}}
+\address{40 avenue du Jura}{01210 FERNEY-VOLTAIRE}    % optional, remove the line if not wanted
+\mobile{+41-7-54-11-88-57}                    % optional, remove the line if not wanted
+\email{christophe.haen@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{Nationality : French\\Age : 27} % optional, remove the line if not wanted
+\quote{\huge{\textbf{Computer Science PhD}}}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Qualifications}
+\cventry{2010-2013}{PhD student at university Blaise Pascal (Clermont-Ferrand) and CERN (Geneva)}{Thesis in computer science and artificial intelligence}{}{}{}
+\cventry{2007--2010}{Student at the ISIMA}{(Institut Sup\'erieur d'Informatique, de Mod\'elisation et de leurs Applications)}{Clermont-Ferrand (63), a computer science college in Clermont-Ferrand, France}{Option Software Engineering and Computing Systems. Diploma equivalent to a Master's Degree in Engineering}{}  % arguments 3 to 6 are optional
+\cventry{2005--2007}{Classes pr\'eparatoires}{specific advanced Maths and Physics classes towards competitive admission into French engineering colleges option computer science - equivalent to two years of university study}{Lyce Jean-Moulin, Forbach, France}{}{}  % arguments 3 to 6 are optional
+
+\section{Languages}
+
+\cventry{French}{Native Speaker}{}{}{}{}
+\cventry{English}{Fluent in writing, reading and speaking}{}{}{}{}
+\cventry{German}{Working knowledge}{}{}{}{}
+
+
+\section{Skills}
+\cvline{languages}{\textbf{C, C++}, Java, \textbf{Python}, Perl, shell script, \LaTeX}
+\cvline{database}{Oracle, \textbf{MySQL}}
+\cvline{Tools and software}{LibreOffice, Doxygen/Javadoc, SVN/\textbf{Git}, \textbf{Eclipse}, MySQL Workbench, Wireshark, iperf, fio, \textbf{Icinga}/Nagios, Ganglia, Quattor}
+\cvline{systems}{\textbf{Linux}/Unix, Windows, Mac OS X}
+\cvline{various}{Network knowledges, \textbf{system administration}, Storage technology, \textbf{database design, application design}, project management, \textbf{monitoring expert}}
+
+
+
+
+\section{Academic Projects}
+\cventry{2010}{ISIMA third year project}{Study of the impact of the correlation of random sequences on Monte Carlo simulations (C/C++)}{}{}{}
+\cventry{2009}{ISIMA second year project}{Development of an interactive program which graphically represents in 3D the Bin Packing Problem for LIMOS/CNRS (Java -- Java3D)}{}{}{}
+\cventry{2008}{ISIMA first year project}{Development of a program to generate statistics and spot problems on any user defined queuing network(C)}{}{}{}
+
+
+
+\vspace*{2cm}
+
+\section{Professional Experience}
+
+\cventry{Nov. 2013 - Today}{LHCb fellow in charge of Data Management}{CERN}{Geneva}{}{My main responsibilities are maintenance and development of the DIRAC and LHCbDIRAC Data Management System (DMS), which is used for data handling on the Grid for LHCb and several other VOs.\newline
+These developments include the replacement of GFAL by GFAL2, development of new storage access plugins based on latest protocols (e.g. xrootd,http/webdav), re-eengineering of the DMS, replacement of FTS2 by FTS3 in DIRAC, and the design and development of, and migration to, the new DIRAC FileCatalog code and database to replace the LFC.\newline
+I participate to the daily operations, and take Offline and Online shifts. I kept the teaching and student supervision activities as well as the monitoring responsibility from my previous CERN position. Moreover, I now act as a liaison between the Online and Offline world.\newline
+(Python -- MySQL -- DataManagement -- Distributed computing -- Eclipse -- Git -- Jenkins)}
+
+\cventry{Nov. 2010 - Oct. 2013}{LHCb doctoral student}{CERN}{Geneva}{}{The aim of my thesis was to develop a method and implement a software based on artificial intelligence in order to support the LHCb Online administrator team. This software attempted to provide diagnosis and recovery solutions to system problems.\newline
+I became an active system administrator and helped in various aspects. I became an expert in monitoring and took the responsibility for it.\newline
+Besides these activities, I was supervising students, organizing training on Data Acquisition for summer students, teaching storage technologies at the International School of Trigger and Data Acquisition (ISOTDAQ), taking central shifts and on call duties, and frequently acting as an LHCb guide.\newline
+(C++ -- Python -- Bash -- MySQL -- Quattor  -- Storage system -- Linux -- ICINGA -- Ganglia)}
+
+\cventry{April-Sep. 2010}{ISIMA third year Internship for CERN, Geneva}{I designed and developed a software able to dynamically discover any network, gather information about its equipments, draw a map of it, and perform monitoring tasks (Python -- Networking -- SNMP -- LLDP -- SVN -- Eclipse)}{}{}{}
+
+\cventry{April-Sep. 2009}{ISIMA second year Internship for Genicad, Prague, Czech Republic}{I implement advanced features for an existing 3D CAD sketcher. I also took part to the daily users support(C++ -- MS Visual C++ -- MS Visual SourceSafe)}{}{}{}
+
+
+
+
+
+\section{Activities and Interests}
+\cvline{Interested in}{music(16 years practice guitar)}{}{}{}{}
+\cvline{}{sport(table tennis, badminton, tennis)}{}{}{}{}
+
+
+
+
+\section{Referees}
+\cventry{Dr. Philippe Charpentier}{LHCb Experiment Distributed Computing Coordinator at CERN}{E-mail : philippe.charpentier@cern.ch}{}{}{}
+\cventry{Dr. Niko Neufeld}{LHCb Deputy Project Leader Physics Department at CERN}{E-mail : niko.neufeld@cern.ch}{}{}{}
+\cventry{Prof. Vincent Barra}{Head of ISIMA, PhD professor}{E-mail : vincent.barra@isima.fr}{}{}{}
+
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+%
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
