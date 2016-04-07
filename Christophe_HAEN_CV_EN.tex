@@ -7,8 +7,8 @@
 
 \documentclass[11pt,a4paper]{moderncv}
 
-\usepackage[francais]{babel}
-\usepackage[latin1]{inputenc}
+%\usepackage[francais]{babel}
+%\usepackage[latin1]{inputenc}
 
 % moderncv themes
 \moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -55,7 +55,7 @@
 
 
 \section{Skills}
-\cvline{languages}{\textbf{C, C++}, Java, \textbf{Python}, Perl, shell script, \LaTeX}
+\cvline{languages}{\textbf{C, C++}, Java, \textbf{Python}, Perl, \textbf{shell script}, \LaTeX}
 \cvline{database}{Oracle, \textbf{MySQL}}
 \cvline{Tools and software}{LibreOffice, Doxygen/Javadoc, SVN/\textbf{Git}, \textbf{Eclipse}, MySQL Workbench, Wireshark, iperf, fio, \textbf{Icinga}/Nagios, Ganglia, Quattor}
 \cvline{systems}{\textbf{Linux}/Unix, Windows, Mac OS X}
@@ -91,13 +91,9 @@ Besides these activities, I was supervising students, organizing training on Dat
 
 
 
-
-
 \section{Activities and Interests}
-\cvline{Interested in}{music(16 years practice guitar)}{}{}{}{}
+\cvline{Interested in}{music(18 years practice guitar)}{}{}{}{}
 \cvline{}{sport(table tennis, badminton, tennis)}{}{}{}{}
-
-
 
 
 \section{Referees}
@@ -105,8 +101,12 @@ Besides these activities, I was supervising students, organizing training on Dat
 \cventry{Dr. Niko Neufeld}{LHCb Deputy Project Leader Physics Department at CERN}{E-mail : niko.neufeld@cern.ch}{}{}{}
 \cventry{Prof. Vincent Barra}{Head of ISIMA, PhD professor}{E-mail : vincent.barra@isima.fr}{}{}{}
 
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
 
-\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
